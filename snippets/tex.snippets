@@ -76,8 +76,8 @@ snippet \ unnumbered equation: \[ ... \]
 		${0:${VISUAL}}
 	\\]
 # Inline Math
-snippet $ inline math: $...$
-	\$${1:Math}\$ ${0}
+snippet inl inline math: $...$
+	\$${1:Math}\$${0}
 # Equation array
 snippet eqnarray eqnarray environment
 	\\begin{eqnarray}
@@ -428,3 +428,11 @@ snippet ra rightarrow
 # Long right arrow
 snippet lra longrightarrow
 	\\longrightarrow {$0}
+	
+# Bar
+snippet bar bar over variable
+	\bar{${1}}${0}
+	
+# hat
+snippet hat hat over variable
+	\hat{${1}}${0}
